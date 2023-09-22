@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1364/1364264.png">
+    <title>Mind Game</title>
+</head>
+
+<body>
+    <main>
+        <section class="section-1">
+            <h1>Juego de memoria</h1>
+            <table>
+                <tr>
+                    <td><button id="0" onclick="destapar(0)" class="card"></button></td>
+                    <td><button id="1" onclick="destapar(1)" class="card"></button></td>
+                    <td><button id="2" onclick="destapar(2)" class="card"></button></td>
+                    <td><button id="3" onclick="destapar(3)" class="card"></button></td>
+                </tr>
+                <tr>
+                    <td><button id="4" onclick="destapar(4)" class="card"></button></td>
+                    <td><button id="5" onclick="destapar(5)" class="card"></button></td>
+                    <td><button id="6" onclick="destapar(6)" class="card"></button></td>
+                    <td><button id="7" onclick="destapar(7)" class="card"></button></td>
+                </tr>
+                <tr>
+                    <td><button id="8" onclick="destapar(8)" class="card"></button></td>
+                    <td><button id="9" onclick="destapar(9)" class="card"></button></td>
+                    <td><button id="10" onclick="destapar(10)" class="card"></button></td>
+                    <td><button id="11" onclick="destapar(11)" class="card"></button></td>
+                </tr>
+                <tr>
+                    <td><button id="12" onclick="destapar(12)" class="card"></button></td>
+                    <td><button id="13" onclick="destapar(13)" class="card"></button></td>
+                    <td><button id="14" onclick="destapar(14)" class="card"></button></td>
+                    <td><button id="15" onclick="destapar(15)" class="card"></button></td>
+                </tr>
+            </table>
+        </section>
+        <section class="section-2">
+            <h2 class="aciertos estadisticas"> Aciertos: <span id='aciertos' class="contador-aciertos">0</span></h2>
+            <h2 class="tiempo estadisticas"> Tiempo: <span id='time'></span> Segundos</h2>
+            <h2 class="movimientos estadisticas">Movimientos: <span id="moves"></span></h2>
+            <div class="container-btns">
+                <button class="start">Iniciar juego</button>
+                <button id="againBtn" class="start">Volver a jugar</button>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <a href="https://samisosa10.github.io/mi-portafolio/" target="_blank">By Samisosa</a>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
