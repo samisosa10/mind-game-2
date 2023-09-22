@@ -86,7 +86,7 @@ const desbloquearCards = () => {
 };
 const cronomentro = () => {
   desbloquearCards();
-  let tiempo = 3;
+  let tiempo = 30;
   start.classList.add("disable");
   const contador = setInterval(() => {
     tiempo--;
